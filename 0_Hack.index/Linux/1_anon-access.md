@@ -23,23 +23,23 @@ If HTTP app allows file upload →
 
 If HTTP endpoint vulnerable to command injection →
     → Direct shell potential
-    → [[3_Exploitation/Command Injection]]
+    → [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/3_Exploitation/Command Injection]]
 
 If application config files exposed →
     → Extract creds → reuse for SSH / sudo
 
 ### Core Tools:
 
-- [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/2_Enumeration/Enumerating HTTP and HTTPS]]
-- [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/3_Exploitation/Manual Exploitation]]
-- [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/3_Exploitation/Gaining Shell Access]]
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/2_Enumeration/Enumerating HTTP and HTTPS]]
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/3_Exploitation/Manual Exploitation]]
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/3_Exploitation/Gaining Shell Access]]
 
 ### Secondary Actions:
 
-- [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/3_Exploitation/Brute-Force Attacks]]
-- [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/3_Exploitation/Credential Stuffing & Password Spraying]]
-- [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/3_Exploitation/Hashcracking]]
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/3_Exploitation/Brute-Force Attacks]]
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/3_Exploitation/Credential Stuffing & Password Spraying]]
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/3_Exploitation/Hashcracking]]
 
 ### Supplemental / Contextual
 
-- [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/3_Exploitation/Burp Suite]]
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/3_Exploitation/Burp Suite]]

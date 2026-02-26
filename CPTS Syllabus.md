@@ -1,21 +1,21 @@
-* [ ] **Week 5:**
-    * [ ] *Penetration Testing Process*
+* [x] **Week 5:**
+    * [x] *Penetration Testing Process*
         * [x] Introduction to the Penetration Tester Path
-        * [ ] Academy Modules Layout
-        * [ ] Academy Exercises & Questions
-        * [ ] Penetration Testing Overview
-        * [ ] Laws and Regulations
-        * [ ] Penetration Testing Process
-        * [ ] Pre-Engagement
-        * [ ] Information Gathering
-        * [ ] Vulnerability Assessment
-        * [ ] Exploitation
-        * [ ] Post-Exploitation
-        * [ ] Lateral Movement
-        * [ ] Proof-of-Concept
-        * [ ] Post-Engagement
-        * [ ] Practice
-* [ ] **Week 6:**
+        * [x] Academy Modules Layout
+        * [x] Academy Exercises & Questions
+        * [x] Penetration Testing Overview
+        * [x] Laws and Regulations
+        * [x] Penetration Testing Process
+        * [x] Pre-Engagement
+        * [x] Information Gathering
+        * [x] Vulnerability Assessment
+        * [x] Exploitation
+        * [x] Post-Exploitation
+        * [x] Lateral Movement
+        * [x] Proof-of-Concept
+        * [x] Post-Engagement
+        * [x] Practice
+* [ ] **Week 6-7:**
     * [ ] *Getting Started*
         * [ ] Infosec Overview
         * [ ] Getting Started with a Pentest Distro
@@ -40,7 +40,7 @@
         * [ ] Getting Help
         * [ ] Next Steps
         * [ ] Knowledge Check
-* [ ] **Week 7:**
+* [ ] **Week 8:**
     * [ ] *Footprinting (Part 1/2)*
         * [ ] Enumeration Principles
         * [ ] Enumeration Methodology
@@ -54,7 +54,7 @@
         * [ ] SMTP
         * [ ] IMAP / POP3
         * [ ] SNMP
-* [ ] **Week 8:**
+* [ ] **Week 9:**
     * [ ] *Footprinting (Part 2/2)*
         * [ ] MySQL
         * [ ] MSSQL
@@ -65,7 +65,7 @@
         * [ ] Footprinting Lab - Easy
         * [ ] Footprinting Lab - Medium
         * [ ] Footprinting Lab - Hard
-* [ ] **Week 9:**
+* [ ] **Week 10:**
     * [ ] *Information Gathering – Web Edition*
         * [ ] Introduction
         * [ ] WHOIS
@@ -86,7 +86,7 @@
         * [ ] Web Archives
         * [ ] Automating Recon
         * [ ] Skills Assessment
-* [ ] **Week 10:**
+* [ ] **Week 11:**
     * [ ] *Network Enumeration with Nmap*
         * [ ] Enumeration
         * [ ] Introduction to Nmap
@@ -100,7 +100,7 @@
         * [ ] Firewall and IDS/IPS Evasion - Easy Lab
         * [ ] Firewall and IDS/IPS Evasion - Medium Lab
         * [ ] Firewall and IDS/IPS Evasion - Hard Lab
-* [ ] **Week 11:**
+* [ ] **Week 12:**
     * [ ] *Vulnerability Assessment*
         * [ ] Security Assessments
         * [ ] Vulnerability Assessment
@@ -119,7 +119,7 @@
         * [ ] Exporting The Results
         * [ ] OpenVAS Skills Assessment
         * [ ] Reporting
-* [ ] **Week 12:**
+* [ ] **Week 13:**
     * [ ] *Attacking Common Services (Part 1/2)*
         * [ ] Interacting with Common Services
         * [ ] The Concept of Attacks
@@ -137,7 +137,7 @@
         * [ ] Latest DNS Vulnerabilities
         * [ ] Attacking Email Services
         * [ ] Latest Email Service Vulnerabilities
-* [ ] **Week 13:**
+* [ ] **Week 14:**
     * [ ] *Attacking Common Services (Part 2/2)*
         * [ ] Attacking Common Services - Easy
         * [ ] Attacking Common Services - Medium
@@ -169,7 +169,7 @@
         * [ ] Password Policies
         * [ ] Password Managers
         * [ ] Skills Assessment - Password Attacks
-* [ ] **Week 14:**
+* [ ] **Week 15:**
     * [ ] *File Transfers*
         * [ ] File Transfers
         * [ ] Windows File Transfer Methods
@@ -190,7 +190,7 @@
         * [ ] Introduction to Payloads
         * [ ] Automating Payloads & Delivery with Metasploit
         * [ ] Crafting payloads with MSFvenom
-* [ ] **Week 18:**
+* [ ] **Week 19:**
     * [ ] *Shells & Payloads (Part 2/2)*
         * [ ] Infiltrating Windows
         * [ ] Infiltrating Unix/Linux
@@ -217,7 +217,7 @@
         * [ ] Introduction to MSFVenom
         * [ ] Firewall and IDS/IPS evasion
         * [ ] Metasploit-Framework Updates - August 2020
-* [ ] **Week 19:**
+* [ ] **Week 20:**
     * [ ] *Pivoting, Tunneling, and Port Forwarding*
         * [ ] Introduction to Pivoting, Tunneling, and Port Forwarding
         * [ ] The Networking Behind Pivoting
@@ -237,7 +237,7 @@
         * [ ] Skills Assessment
         * [ ] Detection & Prevention
         * [ ] Beyond this Module
-* [ ] **Week 20:**
+* [ ] **Week 21:**
     * [ ] *Active Directory Enumeration & Attacks (Part 1/2)*
         * [ ] Introduction to Active Directory Enumeration & Attacks
         * [ ] Tools Of The Trade
@@ -255,7 +255,7 @@
         * [ ] Credentialed Enumeration - from Linux
         * [ ] Credentialed Enumeration - from Windows
         * [ ] Living Off the Land
-* [ ] **Week 21:**
+* [ ] **Week 22:**
     * [ ] *Active Directory Enumeration & Attacks (Part 2/2)*
         * [ ] Kerberoasting - from Linux
         * [ ] Kerberoasting - from Windows
@@ -293,7 +293,7 @@
         * [ ] ZAP Scanner
         * [ ] Extensions
         * [ ] Skills Assessment - Using Web Proxies
-* [ ] **Week 22:**
+* [ ] **Week 23:**
     * [ ] *Attacking Web Applications with Ffuf*
         * [ ] Introduction
         * [ ] Web Fuzzing
@@ -322,7 +322,7 @@
         * [ ] Custom Wordlists
         * [ ] Skills Assessment Part 1
         * [ ] Skills Assessment Part 2
-* [ ] **Week 23:**
+* [ ] **Week 24:**
     * [ ] *SQL Injection Fundamentals*
         * [ ] Introduction
         * [ ] Intro to Databases
@@ -353,7 +353,7 @@
         * [ ] Bypassing Web Application Protections
         * [ ] OS Exploitation
         * [ ] Skills Assessment
-* [ ] **Week 24-25:**
+* [ ] **Week 25-26:**
     * [ ] *Cross-Site Scripting (XSS)*
         * [ ] Intro to XSS
         * [ ] Stored XSS
@@ -377,7 +377,7 @@
         * [ ] Automated Scanning
         * [ ] File Inclusion Prevention
         * [ ] Skills Assessment - File Inclusion
-* [ ] **Week 26:**
+* [ ] **Week 27:**
     * [ ] *File Upload Attacks*
         * [ ] Intro to File Upload Attacks
         * [ ] Absent Validation
@@ -403,7 +403,7 @@
         * [ ] Evasion Tools
         * [ ] Command Injection Prevention
         * [ ] Skills Assessment
-* [ ] **Week 28:**
+* [ ] **Week 29:**
     * [ ] *Web Attacks*
         * [ ] Introduction to Web Attacks
         * [ ] Intro to HTTP Verb Tampering
@@ -457,7 +457,7 @@
         * [ ] Attacking Common Applications - Skills Assessment I
         * [ ] Attacking Common Applications - Skills Assessment II
         * [ ] Attacking Common Applications - Skills Assessment III
-* [ ] **Week 29:**
+* [ ] **Week 30:**
     * [ ] *Linux Privilege Escalation*
         * [ ] Introduction to Linux Privilege Escalation
         * [ ] Environment Enumeration
@@ -487,7 +487,7 @@
         * [ ] Netfilter
         * [ ] Linux Hardening
         * [ ] Linux Local Privilege Escalation - Skills Assessment
-* [ ] **Week 30:**
+* [ ] **Week 31:**
     * [ ] *Windows Privilege Escalation*
         * [ ] Introduction to Windows Privilege Escalation
         * [ ] Useful Tools
@@ -522,7 +522,7 @@
         * [ ] Windows Hardening
         * [ ] Windows Privilege Escalation Skills Assessment - Part I
         * [ ] Windows Privilege Escalation Skills Assessment - Part II
-* [ ] **Week 31:**
+* [ ] **Week 32:**
     * [ ] *Documentation & Reporting*
         * [ ] Introduction to Documentation & Reporting
         * [ ] Notetaking & Organization
@@ -547,7 +547,7 @@
         * [ ] Post-Exploitation
         * [ ] Engagement Closeout
         * [ ] Beyond this Module
-* [ ] **Week 32:**
+* [ ] **Week 33:**
     * [ ] Exam Prep work
-* [ ] **Week 33-34:**
+* [ ] **Week 34-35:**
     * [ ] Sit exam (10 days)

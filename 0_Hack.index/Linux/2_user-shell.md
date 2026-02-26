@@ -12,7 +12,7 @@ If `sudo -l` works →
 
 If SUID/SGID binaries exist →
     → Check for GTFOBins matches
-    → [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/4_Privilege_Escalation/GTFO Bins]]
+    → [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/4_Privilege_Escalation/GTFO Bins]]
 
 If crontab / timers writable →
     → Privilege escalation vector
@@ -28,14 +28,14 @@ If SSH keys readable →
 
 ### Core Tools:
 
-- [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/4_Privilege_Escalation/LinPEAS, WinPEAS, & SharPEAS]]
-- [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/4_Privilege_Escalation/GTFO Bins]]
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/4_Privilege_Escalation/LinPEAS, WinPEAS, & SharPEAS]]
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/4_Privilege_Escalation/GTFO Bins]]
 
 ### Secondary Actions:
 
-- [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/3_Exploitation/Hashcracking]]
-- [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/5_Post-Exploitation/Hosted Payloads & File Transfers]]
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/3_Exploitation/Hashcracking]]
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/5_Post-Exploitation/Hosted Payloads & File Transfers]]
 
 ### Supplemental / Contextual
 
-- [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/5_Post-Exploitation/Pivoting]]
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/5_Post-Exploitation/Pivoting]]

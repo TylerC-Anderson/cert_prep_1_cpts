@@ -1,7 +1,24 @@
 
 ## Quick Use
 
+**Workflow tip**: ALWAYS check:
+- Source code (ctrl-u)
+- Dev Tools -> Network
+    - api
+    - token
+    - key
+    - internal
+    - localhost
+- Robots.txt
+- Linked JS Files
+- 
+
+**Config Tip**: https://github.com/danielmiessler/SecLists is a good seclist if it's not on your distro to start. Can **git clone** or `sudo apt install seclists -y` to get it
+
 *Tools*:
+- `curl` - makes the web request and retrieves the response or file being served
+- `eyewitness` - runs through list of webpages provided by a file, screenshots them, and records fingerprints and possible credentials
+- `whatweb` - automated webapp enum across a network range
 - `nikto` - `nikto -h http://192.168.109.129` -  Enums web servers, listing vulnerabilities if in the DB that nikto accesses.
 - `Firefox about:config` - If you find an outdated config and you need to enable legacy compatibility
 - `ffuf` - directory fuzzer capable of recursion (see commands for usage)
@@ -21,6 +38,7 @@
 
 **Commands**:
 - `gobuster dir -u http://TARGETIPADDR[:PORTNUM]/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt` - Single directory buster (non-recursive, see `ffuf`)
+- `curl -IL https://www.example.com`
 - `ffuf -u http://TARGET/FUZZ -w /usr/share/seclists/Discovery/Web-Content/common.txt -recursion -recursion-depth 2 -e .php,.html -mc 200,301,302 -o ffuf_results.json` - FUZZ is the injection point - basic recursive fuzzing with depth 2, append .php/.html
 `
 ## General

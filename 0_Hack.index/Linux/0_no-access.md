@@ -26,17 +26,17 @@ If banners reference Linux distros, kernel versions →
 
 ### Core Tools:
 
-- [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/2_Enumeration/nmap - Active Scanning]]
-- [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/2_Enumeration/0_General - Enumeration Gathering]]
-- [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/2_Enumeration/Enumerating HTTP and HTTPS]]
-- [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/2_Enumeration/Enumerating SSH]]
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/2_Enumeration/nmap - Active Scanning]]
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/2_Enumeration/0_General - Enumeration Gathering]]
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/2_Enumeration/Enumerating HTTP and HTTPS]]
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/2_Enumeration/Enumerating SSH]]
 
 ### Supplemental / Contextual
 
-- [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/Networking Review]]
-- [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/Attack Methodology & Strategy]]
-- [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/Ethical Hacker Methodology]]
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/Networking Review]]
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/Attack Methodology & Strategy]]
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/Ethical Hacker Methodology]]
 
-- [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/1_Reconnaissance/0_General - Reconnaissance & Intel]]
-- [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/1_Reconnaissance/Website Reconnaissance]]
-- [[2_Studies/Courses/Current/CERTPREP - PJPT-Practical Jr Pen Tester/Practical Ethical Hacking/2_Enumeration/Investigating Breached Credentials]]
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/1_Reconnaissance/0_General - Reconnaissance & Intel]]
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/1_Reconnaissance/Website Reconnaissance]]
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/2_Enumeration/Investigating Breached Credentials]]

@@ -29,7 +29,10 @@
 - `google.com`
 - `Exploit-db.com` - Website with exploits POC code snippets
 - `searchsploit` - good for offline
-
+- `CVEdetails`
+- `Vulners`
+- `Packet Storm Security`
+- `NIST`
 ## General
 
 **Objectives**:
