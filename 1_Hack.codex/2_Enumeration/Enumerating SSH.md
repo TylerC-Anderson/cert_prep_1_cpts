@@ -19,17 +19,3 @@
 **Objectives**: Connecting without attempting to actually login via password (i.e. hitting `ctrl-c` when prompted for password) can sometimes give you a banner which can tell you information about the machine or version of `SSH` being ran
 
 **Overview**:
-
-## Glossary
-
-
-
-
-
-
-
-
-
-
-
-

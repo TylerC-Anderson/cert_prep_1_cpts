@@ -17,5 +17,3 @@
 Formatting should be neat and tidy, with borders and figure titles for figures
 
 **Overview**:
-
-## Glossary

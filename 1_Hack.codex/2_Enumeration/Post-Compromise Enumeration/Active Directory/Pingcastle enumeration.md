@@ -12,4 +12,3 @@ Freemium software
 
 **Overview**:
 Calculates a score for the risk model of the Active Directory
-## Glossary
