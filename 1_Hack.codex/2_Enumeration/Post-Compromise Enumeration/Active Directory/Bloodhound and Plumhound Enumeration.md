@@ -32,5 +32,3 @@ While within the Bloodhound webconsole, you can:
 - much more
 
 **Overview**:
-
-## Glossary

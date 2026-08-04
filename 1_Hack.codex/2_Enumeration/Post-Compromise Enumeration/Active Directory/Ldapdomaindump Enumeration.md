@@ -17,4 +17,3 @@
 
 **Overview**:
 Gathers information on domain users, policies, trusts, AD computers, and groups
-## Glossary

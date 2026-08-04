@@ -25,5 +25,3 @@
 
 
 **Mitigation**:
-
-## Glossary

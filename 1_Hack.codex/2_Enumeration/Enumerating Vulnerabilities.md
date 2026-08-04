@@ -51,8 +51,3 @@
 - [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/2_Enumeration/Enumerating HTTP and HTTPS|Port 80]]
 - [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/2_Enumeration/Enumerating HTTP and HTTPS|Port 443]]
 - [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/2_Enumeration/Enumerating SMB|Port 139/445]]
-
-
-
-
-## Glossary

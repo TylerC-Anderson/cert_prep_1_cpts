@@ -17,4 +17,3 @@ Get shell access on system with write and execute perms -> upload (or download f
 
 **Overview**:
 Shell script that allows you to enumerate potential paths to escalate from a low-level user shell to more authoritative shells and eventually `root`.
-## Glossary
