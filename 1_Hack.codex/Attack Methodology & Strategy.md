@@ -1,7 +1,6 @@
 ## Full methodology workflow
 
 1. Run [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/2_Enumeration/nmap - Active Scanning|nmap]] against target IP addr
-2. 
 
 ### Post-Compromise Attack Strategy, pre-domain compromise:
 Once you get an account:

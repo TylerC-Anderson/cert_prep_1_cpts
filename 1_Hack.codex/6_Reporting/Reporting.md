@@ -1,4 +1,3 @@
-10.129.26.212
 ## Quick-Use
 
 **Commands**:

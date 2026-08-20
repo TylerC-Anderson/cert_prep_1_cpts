@@ -2,28 +2,41 @@
 ## Quick-Use
 
 **Commands**:
+- `uname -a` - (Linux) show kernel version to cross-check against known kernel exploits
+- `sudo -l` - list what `sudo` perms the current user has
+- `sudo su -` - switch to root when sudo allows it (`(ALL : ALL) ALL`)
+- `sudo -u USER /bin/echo hi` - run a command as USER (e.g. a `NOPASSWD` entry - no password needed)
+- `dpkg -l` | `pacman -Q` | `rpm -qa` - (Linux) list installed software to hunt vulnerable versions; Windows: browse `C:\Program Files`
+- `ssh-keygen -f KEYNAME` - gen a keypair (for the write-access-to-`.ssh` escalation)
+- `echo "ssh-rsa AAAA...== user@host" >> /root/.ssh/authorized_keys` - append your pubkey (write access)
+- `chmod 600 id_rsa` - tighten key perms (ssh rejects world-readable keys)
+- `ssh root@TARGETIPADDR -i id_rsa` - log in with a looted or placed private key
+- Cron write-targets to check: `/etc/crontab`, `/etc/cron.d`, `/var/spool/cron/crontabs/root`
 
+*Tools & Resources*:
+- [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/4_Privilege_Escalation/LinPEAS, WinPEAS, & SharPEAS|LinPEAS / WinPEAS / SharPEAS]] - `PEASS` automated privesc enumeration (well-maintained)
+- [LinEnum](https://github.com/rebootuser/LinEnum.git) - Linux enum script
+- [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker) - Linux enum script
+- [Seatbelt](https://github.com/GhostPack/Seatbelt) - Windows enum script
+- [JAWS](https://github.com/411Hall/JAWS) - Windows enum script
+- [GTFOBins](https://gtfobins.github.io) - Unix binaries exploitable via `sudo`/`SUID` to break out to a shell
+- [LOLBAS](https://lolbas-project.github.io/#) - Windows living-off-the-land binaries for privileged actions (download / exec)
+- [HackTricks](https://book.hacktricks.wiki) - privesc checklists: [Linux](https://book.hacktricks.wiki/en/linux-hardening/linux-privilege-escalation-checklist.html) · [Windows](https://book.hacktricks.wiki/en/windows-hardening/checklist-windows-privilege-escalation.html)
+- [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings) - privesc checklists (Linux / Windows)
 
-*Tools*:
-
-> [!tip] Warning
-These scripts will run many commands known for identifying vulnerabilities and create a lot of "noise" that may trigger anti-virus software or security monitoring software that looks for these types of events. This may prevent the scripts from running or even trigger an alarm that the system has been compromised. In some instances, we may want to do a manual enumeration instead of running scripts.
-
-- [HackTricks](https://book.hacktricks.xyz/).
-- [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings).
-- Enumeration Scripts (runs many of the scripts described in `HackTricks` and `PayloadsAllTheThings` above)
-    - [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/4_Privilege_Escalation/LinPEAS, WinPEAS, & SharPEAS|LinPEAS, WinPEAS, or SharPEAS]].
-    - Linux: [LinEnum](https://github.com/rebootuser/LinEnum.git) and [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker).
-    - Windows: [Seatbelt](https://github.com/GhostPack/Seatbelt) and [JAWS](https://github.com/411Hall/JAWS).
-- [GTFOBins](https://gtfobins.github.io) - list of commands that are exploitable through `sudo`
-- [LOLBAS](https://lolbas-project.github.io/#) - list of Windows apps that are leverageable to perform privileged actions like downloading files or executing commands
+> [!warning] Enum scripts are noisy
+> They run many detection-known commands and generate a lot of "noise" that can trip AV/EDR or security monitoring — possibly blocking the script or raising a compromise alarm. In sensitive/monitored environments, prefer manual enumeration.
 
 ## General
 
 **Objectives**:
 - If the software found on a system is updated, OR AV/EDR systems are active or the environment is otherwise sensitive, it is useful to use the `dpkg -l`|`pacman -Q`|`rpm -qa` and similar commands on linux, or look at `C:\Program Files` on Windows, to check the newest software manually for known discovered vulns via cross-referencing ExploitDB/`Searchsploit`/NVD. Otherwise, `PEAS` scripts should handle software enumeration automatically — but note they may miss recently disclosed CVEs if their signatures are outdated.
 
-- `sudo -l` - checks what sudo perms we have
+- **Kernel exploits**: on an old/unpatched OS, check the kernel (`uname -a`) against known exploits (Google / `searchsploit`). Classic example: `DirtyCow` (`CVE-2016-5195`) — [PoCs](https://github.com/dirtycow/dirtycow.github.io/wiki/PoCs). ***~={red}Kernel exploits can panic or crash the box=~*** — lab-test first; run on client/production systems only with explicit approval and coordination.
+
+- **User privileges** — three common escalation vectors: **1.** `sudo`  **2.** `SUID` binaries  **3.** Windows token privileges (see [[2_Studies/Courses/Current/CERTPREP - CPTS/1_Hack.codex/4_Privilege_Escalation/Token Impersonation|Token Impersonation]]).
+    - `sudo -l` lists our sudo perms. `(ALL : ALL) ALL` -> `sudo su -` for root; a `NOPASSWD:` entry runs without a password (`sudo -u USER cmd` to run as that user). Look the allowed binary up in `GTFOBins` for a root break-out.
+    - `SUID` binaries execute as their owner (often root) regardless of caller — an exploitable one (again via `GTFOBins`) yields a shell as the owner.
 
 - Write perms over these can provide a valid escalation path via exploiting cron jobs.
     1. `/etc/crontab`
@@ -185,4 +198,12 @@ Now, the remote server should allow us to log in as that user by using our priva
 root@remotehost#
 ```
 
-As we can see, we can now ssh in as the user `root`. The [Linux Privilege Escalation](https://academy.hackthebox.com/module/details/51) and the [Windows Privilege Escalation](https://academy.hackthebox.com/module/details/67) modules go into more details on how to use each of these methods for Privilege Escalation, and many others as well.
+As we can see, we can now ssh in as the user `root`.
+
+## Further Reading
+
+*Deeper grounding*:
+- HTB [*Linux Privilege Escalation*](https://academy.hackthebox.com/module/details/51) module - full Linux privesc methodology, each of these vectors in depth.
+- HTB [*Windows Privilege Escalation*](https://academy.hackthebox.com/module/details/67) module - full Windows privesc methodology.
+
+## Glossary

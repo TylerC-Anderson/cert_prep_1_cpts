@@ -1,5 +1,6 @@
 
 **Objective**: Gather data on Open/Vulnerable ports with a spoofed 3-way Handshake (`SYN`, `SYNACK`, `ACK` --> Mnemonic: *Sin-snack-ack!*)
+- *note*- that stands for `SYNchronize`, `SynchronizedAcknowledgement`, `Acknowledged`
 
 **General Functionality**: Sends `SYN` packets and waits for a `SYNACK` packet, which signals that the port is open. If the scanner receives an `RST` packet instead, that port is known to be closed and we can move on.
 
